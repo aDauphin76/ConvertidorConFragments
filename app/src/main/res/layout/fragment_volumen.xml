@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Fragmentos.FragmentPeso">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingrese_un_valor"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            android:importantForAutofill="no"
+            android:id="@+id/etEntrada"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:id="@+id/rgDE"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/de"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/litros"
+                    android:id="@+id/rbLitrosDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:enabled="false"
+                    android:text="@string/cm3"
+                    android:id="@+id/rbCM3DE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/mililitros"
+                    android:id="@+id/rbMiliLitrosDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/galones_usa"
+                    android:id="@+id/rbGalonesDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pintas_usa"
+                    android:id="@+id/rbPintasDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/cucharadas_metrico"
+                    android:id="@+id/rbCucharadasDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/tazas_metrico"
+                    android:id="@+id/rbTazasDE"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rgA"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/a"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:enabled="false"
+                    android:text="@string/litros"
+                    android:id="@+id/rbLitrosA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/cm3"
+                    android:id="@+id/rbCM3A"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/mililitros"
+                    android:id="@+id/rbMiliLitrosA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/galones_usa"
+                    android:id="@+id/rbGalonesA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pintas_usa"
+                    android:id="@+id/rbPintasA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/cucharadas_metrico"
+                    android:id="@+id/rbCucharadasA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/tazas_metrico"
+                    android:id="@+id/rbTazasA"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_peso"
+            android:layout_margin="10dp"
+            android:id="@+id/tvResultado"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/convertir"
+            android:layout_gravity="end"
+            android:id="@+id/bConvertir"
+            />
+    </LinearLayout>
+</ScrollView>

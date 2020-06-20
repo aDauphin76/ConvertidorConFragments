@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Fragmentos.FragmentPeso">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingrese_un_valor"
+            android:id="@+id/etEntrada"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:id="@+id/rgDE"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/de"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/pascal"
+                    android:id="@+id/rbPascalDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:enabled="false"
+                    android:text="@string/bar"
+                    android:id="@+id/rbBarDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/kilopascal"
+                    android:id="@+id/rbKiloPascalDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/megapascal"
+                    android:id="@+id/rbMegaPascalDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/psi"
+                    android:id="@+id/rbPSIDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/kgf_cm2"
+                    android:id="@+id/rbKGFDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/inhg"
+                    android:id="@+id/rbInHgDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/atm"
+                    android:id="@+id/rbATMDE"
+                    />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rgA"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/a"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:enabled="false"
+                    android:text="@string/pascal"
+                    android:id="@+id/rbPascalA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/bar"
+                    android:id="@+id/rbBarA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/kilopascal"
+                    android:id="@+id/rbKiloPascalA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/megapascal"
+                    android:id="@+id/rbMegaPascalA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/psi"
+                    android:id="@+id/rbPSIA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/kgf_cm2"
+                    android:id="@+id/rbKGFA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/inhg"
+                    android:id="@+id/rbInHgA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/atm"
+                    android:id="@+id/rbATMA"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_peso"
+            android:layout_margin="10dp"
+            android:id="@+id/tvResultado"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/convertir"
+            android:layout_gravity="end"
+            android:id="@+id/bConvertir"
+            />
+    </LinearLayout>
+</ScrollView>

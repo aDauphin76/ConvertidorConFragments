@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragmentos.FragmentPeso">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingrese_un_valor"
+            android:id="@+id/etEntrada"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:id="@+id/rgDE"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/de"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/km"
+                    android:checked="true"
+                    android:id="@+id/rbKMDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:enabled="false"
+                    android:text="@string/m"
+                    android:id="@+id/rbMDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/cm"
+                    android:id="@+id/rbCMDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/millas"
+                    android:id="@+id/rbMillasDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pies"
+                    android:id="@+id/rbPiesDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pulgadas"
+                    android:id="@+id/rbPulgadasDE"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/yardas"
+                    android:id="@+id/rbYardasDE"
+                    />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rgA"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CategoryStyle"
+                    android:background="@color/categoria_peso"
+                    android:text="@string/a"/>
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/km"
+                    android:enabled="false"
+                    android:id="@+id/rbKMA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/m"
+                    android:id="@+id/rbMA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/cm"
+                    android:id="@+id/rbCMA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/millas"
+                    android:id="@+id/rbMillasA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pies"
+                    android:id="@+id/rbPiesA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/pulgadas"
+                    android:id="@+id/rbPulgadasA"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtonStyle"
+                    android:text="@string/yardas"
+                    android:id="@+id/rbYardasA"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_peso"
+            android:layout_margin="10dp"
+            android:id="@+id/tvResultado"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/convertir"
+            android:layout_gravity="end"
+            android:id="@+id/bConvertir"
+            />
+    </LinearLayout>
+</ScrollView>

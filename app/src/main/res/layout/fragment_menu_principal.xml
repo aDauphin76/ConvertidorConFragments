@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FragmentMenuPrincipal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvArea"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_area"
+            android:text="@string/area"
+            />
+
+        <TextView
+            android:id="@+id/tvPeso"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_peso"
+            android:text="@string/peso"
+            />
+
+        <TextView
+            android:id="@+id/tvDistancia"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_distancia"
+            android:text="@string/distancia" />
+
+        <TextView
+            android:id="@+id/tvVolumen"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_volumen"
+            android:text="@string/volumen" />
+
+        <TextView
+            android:id="@+id/tvCocina"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_cocina"
+            android:text="@string/cocina" />
+
+        <TextView
+            android:id="@+id/tvTemperatura"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_temperatura"
+            android:text="@string/temperatura" />
+
+        <TextView
+            android:id="@+id/tvPresion"
+            style="@style/CategoryStyle"
+            android:background="@color/categoria_presion"
+            android:text="@string/presion" />
+
+    </LinearLayout>
+
+
+</ScrollView>
